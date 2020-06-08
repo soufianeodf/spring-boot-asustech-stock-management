@@ -1,6 +1,11 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 
 <s:include value = "template/header.jsp"/>
+
+<body class="animsition">
+
+<s:include value = "template/nav.jsp"/>
+
 <s:include value = "template/sidebar.jsp"/>
 
         <!-- PAGE CONTAINER-->

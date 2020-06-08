@@ -51,9 +51,10 @@
 	src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
 
 <script>
-	$(document).ready(function() {
-		$('#table_id').DataTable();
-	});
+$(document).ready(function() {
+    $('#datatable-1').DataTable();
+    $('#datatable-2').DataTable();
+});
 </script>
 
 </body>
