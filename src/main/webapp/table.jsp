@@ -197,90 +197,15 @@
 									</tr>
 								</thead>
 								<tbody>
-									<tr>
-										<td>produit.codePdt</td>
-										<td>produit.nomPdt</td>
-										<td>produit.prixPdt</td>
-										<td>produit.qtePdt</td>
-										<td class="text-center">click me</td>
-									</tr>
-									<tr>
-										<td>produit.codePdt</td>
-										<td>produit.nomPdt</td>
-										<td>produit.prixPdt</td>
-										<td>produit.qtePdt</td>
-										<td class="text-center">click me</td>
-									</tr>
-									<tr>
-										<td>produit.codePdt</td>
-										<td>produit.nomPdt</td>
-										<td>produit.prixPdt</td>
-										<td>produit.qtePdt</td>
-										<td class="text-center">click me</td>
-									</tr>
-									<tr>
-										<td>produit.codePdt</td>
-										<td>produit.nomPdt</td>
-										<td>produit.prixPdt</td>
-										<td>produit.qtePdt</td>
-										<td class="text-center">click me</td>
-									</tr>
-									<tr>
-										<td>produit.codePdt</td>
-										<td>produit.nomPdt</td>
-										<td>produit.prixPdt</td>
-										<td>produit.qtePdt</td>
-										<td class="text-center">click me</td>
-									</tr>
-									<tr>
-										<td>produit.codePdt</td>
-										<td>produit.nomPdt</td>
-										<td>produit.prixPdt</td>
-										<td>produit.qtePdt</td>
-										<td class="text-center">click me</td>
-									</tr>
-									<tr>
-										<td>produit.codePdt</td>
-										<td>produit.nomPdt</td>
-										<td>produit.prixPdt</td>
-										<td>produit.qtePdt</td>
-										<td class="text-center">click me</td>
-									</tr>
-									<tr>
-										<td>produit.codePdt</td>
-										<td>produit.nomPdt</td>
-										<td>produit.prixPdt</td>
-										<td>produit.qtePdt</td>
-										<td class="text-center">click me</td>
-									</tr>
-									<tr>
-										<td>produit.codePdt</td>
-										<td>produit.nomPdt</td>
-										<td>produit.prixPdt</td>
-										<td>produit.qtePdt</td>
-										<td class="text-center">click me</td>
-									</tr>
-									<tr>
-										<td>produit.codePdt</td>
-										<td>produit.nomPdt</td>
-										<td>produit.prixPdt</td>
-										<td>produit.qtePdt</td>
-										<td class="text-center">click me</td>
-									</tr>
-									<tr>
-										<td>produit.codePdt</td>
-										<td>produit.nomPdt</td>
-										<td>produit.prixPdt</td>
-										<td>produit.qtePdt</td>
-										<td class="text-center">click me</td>
-									</tr>
-									<tr>
-										<td>produit.codePdt</td>
-										<td>produit.nomPdt</td>
-										<td>produit.prixPdt</td>
-										<td>produit.qtePdt</td>
-										<td class="text-center">click me</td>
-									</tr>
+									<s:iterator value="produits">
+										<tr>
+											<td><s:property value="codePdt" /></td>
+											<td><s:property value="nomPdt" /></td>
+											<td><s:property value="prixPdt" /></td>
+											<td><s:property value="qtePdt" /></td>
+											<td class="text-center">click me</td>
+										</tr>
+									</s:iterator>
 								</tbody>
 							</table>
 						</div>
@@ -288,4 +213,4 @@
 					</div>
 				</div>
 
-<s:include value = "template/footer.jsp"/>
+				<s:include value="template/footer.jsp" />
