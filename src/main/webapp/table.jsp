@@ -192,60 +192,24 @@
 							<h2 class="title-1 m-b-25">Liste des Produits</h2>
 							<!-- DATA TABLE-->
 							<div class="table-responsive m-b-40">
-								<table id="datatable-1" class="table table-borderless table-data3">
+								<table id="example-1" class="table table-borderless table-data3">
 									<thead>
 										<tr>
 											<th>Product Code</th>
 											<th>Product Name</th>
 											<th>Product Price</th>
 											<th>Quantity</th>
-											<th>Action</th>
+											<!-- <th>Action</th> -->
 										</tr>
 									</thead>
 									<tbody>
-										<s:iterator value="produits">
+										<s:iterator value="produitsStock">
 											<tr>
 												<td><s:property value="codePdt" /></td>
 												<td><s:property value="nomPdt" /></td>
 												<td><s:property value="prixPdt" /></td>
 												<td><s:property value="qtePdt" /></td>
-												<td class="text-center">click me</td>
-											</tr>
-										</s:iterator>
-										<s:iterator value="produits">
-											<tr>
-												<td><s:property value="codePdt" /></td>
-												<td><s:property value="nomPdt" /></td>
-												<td><s:property value="prixPdt" /></td>
-												<td><s:property value="qtePdt" /></td>
-												<td class="text-center">click me</td>
-											</tr>
-										</s:iterator>
-										<s:iterator value="produits">
-											<tr>
-												<td><s:property value="codePdt" /></td>
-												<td><s:property value="nomPdt" /></td>
-												<td><s:property value="prixPdt" /></td>
-												<td><s:property value="qtePdt" /></td>
-												<td class="text-center">click me</td>
-											</tr>
-										</s:iterator>
-										<s:iterator value="produits">
-											<tr>
-												<td><s:property value="codePdt" /></td>
-												<td><s:property value="nomPdt" /></td>
-												<td><s:property value="prixPdt" /></td>
-												<td><s:property value="qtePdt" /></td>
-												<td class="text-center">click me</td>
-											</tr>
-										</s:iterator>
-										<s:iterator value="produits">
-											<tr>
-												<td><s:property value="codePdt" /></td>
-												<td><s:property value="nomPdt" /></td>
-												<td><s:property value="prixPdt" /></td>
-												<td><s:property value="qtePdt" /></td>
-												<td class="text-center">click me</td>
+												<!-- <td class="text-center">click me</td> -->
 											</tr>
 										</s:iterator>
 									</tbody>
@@ -260,24 +224,22 @@
 							<h2 class="title-1 m-b-25">Liste des Produits Approvisionnement</h2>
 							<!-- DATA TABLE-->
 							<div class="table-responsive m-b-40">
-								<table id="datatable-2" class="table table-borderless table-data3">
+								<table id="example-2" class="table table-borderless table-data3">
 									<thead>
 										<tr>
 											<th>Product Code</th>
-											<th>Product Name</th>
-											<th>Product Price</th>
-											<th>Quantity</th>
-											<th>Action</th>
+											<th>Commande Quantity</th>
+											<th>expected delivery date</th>
+											<!-- <th>Action</th> -->
 										</tr>
 									</thead>
 									<tbody>
-										<s:iterator value="produits">
+										<s:iterator value="produitsApprovisionnement">
 											<tr>
 												<td><s:property value="codePdt" /></td>
-												<td><s:property value="nomPdt" /></td>
-												<td><s:property value="prixPdt" /></td>
-												<td><s:property value="qtePdt" /></td>
-												<td class="text-center">click me</td>
+												<td><s:property value="qteCommande" /></td>
+												<td><s:property value="datePrevueLivraison" /></td>
+												<!-- <td class="text-center">click me</td> -->
 											</tr>
 										</s:iterator>
 									</tbody>
