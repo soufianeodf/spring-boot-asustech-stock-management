@@ -2,6 +2,7 @@ package org.mvnsearch.ssh.demo.action;
 
 import java.util.List;
 
+import org.mvnsearch.ssh.demo.entities.ProduitsApprovisionnement;
 import org.mvnsearch.ssh.demo.entities.ProduitsStock;
 import org.mvnsearch.ssh.demo.service.CrudService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,21 +17,34 @@ public class TableAction extends ActionSupport {
 
 	@Autowired
 	private CrudService<ProduitsStock> ProduitsStockServiceImpl;
-	
-	private List<ProduitsStock> produits;
+
+	@Autowired
+	private CrudService<ProduitsApprovisionnement> ProduitsApprovisionnementServiceImpl;
+
+	private List<ProduitsStock> produitsStock;
+	private List<ProduitsApprovisionnement> produitsApprovisionnement;
 
 	@Override
 	public String execute() throws Exception {
-		produits = ProduitsStockServiceImpl.findAll();
+		setProduitsStock(ProduitsStockServiceImpl.findAll());
+		produitsApprovisionnement= ProduitsApprovisionnementServiceImpl.findAll();
 		return SUCCESS;
 	}
 
-	public List<ProduitsStock> getProduits() {
-		return produits;
+	public List<ProduitsApprovisionnement> getProduitsApprovisionnement() {
+		return produitsApprovisionnement;
 	}
 
-	public void setProduits(List<ProduitsStock> produits) {
-		this.produits = produits;
+	public void setProduitsApprovisionnement(List<ProduitsApprovisionnement> produitsApprovisionnement) {
+		this.produitsApprovisionnement = produitsApprovisionnement;
+	}
+
+	public List<ProduitsStock> getProduitsStock() {
+		return produitsStock;
+	}
+
+	public void setProduitsStock(List<ProduitsStock> produitsStock) {
+		this.produitsStock = produitsStock;
 	}
 
 }
