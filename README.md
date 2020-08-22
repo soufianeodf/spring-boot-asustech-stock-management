@@ -42,4 +42,5 @@ A simple stock management system for asustech project using Struts 2 and spring 
 5. Open [application.properties](src/main/resources/application.properties) file and change the values of port, username and password of the database to yours.
 6. Run [Application.java](src/main/java/org/mvnsearch/ssh/demo/Application.java) file.
 
+# License
 Licensed under the [MIT License](LICENSE).
